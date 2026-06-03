@@ -43,10 +43,31 @@
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
+@font-face {
+  font-family: 'ABCDiatype';
+  src: url('fonts/ABCDiatype-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABCDiatype';
+  src: url('fonts/ABCDiatype-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 /* bauhaus */
 @font-face {
   font-family: 'Bauhaus93';
   src: url('fonts/Bauhaus93.ttf');
+}
+
+@font-face {
+  font-family: 'ABCGravity';
+  src: url('fonts/ABCGravity-Normal.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -97,28 +118,28 @@ th,
 tr,
 p,
 a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'ABCDiatype', Verdana, Helvetica, sans-serif;
   font-size: 14px
 }
 
 strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'ABCDiatype', Verdana, Helvetica, sans-serif;
   font-size: 14px;
 }
 
 heading {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'ABCDiatype', Verdana, Helvetica, sans-serif;
   font-size: 22px;
 }
 
 papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'ABCDiatype', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700
 }
 
 name {
-  font-family: "Bauhaus93", 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'ABCGravity', "Bauhaus93", 'ABCDiatype', Verdana, Helvetica, sans-serif;
   font-size: 32px;
 }
 
@@ -151,7 +172,8 @@ span.highlight {
   margin: 1.5em -1em;
   padding: 1.5em;
   border-radius: 5px;
-  background: #eee;
+  background: transparent;
+  border: 1px solid #000;
 }
 
 .margin {
